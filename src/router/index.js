@@ -8,7 +8,7 @@ import Wiki from '../views/Wiki.vue'
 import Ideas from '../views/Ideas.vue'
 import Exchange from '../views/Exchange.vue'
 import Charts from '../views/Charts.vue'
-
+import NotFound from '../views/404.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -56,6 +56,11 @@ const routes = [
     path: '/charts',
     name: 'charts',
     component: Charts
+  },
+  {
+    path: '/*',
+    name: '404',
+    component: NotFound
   },
 ]
 
