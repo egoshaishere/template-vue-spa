@@ -7,6 +7,7 @@ import Grid from '../views/Grid.vue'
 import Wiki from '../views/Wiki.vue'
 import Ideas from '../views/Ideas.vue'
 import Exchange from '../views/Exchange.vue'
+import Charts from '../views/Charts.vue'
 
 Vue.use(VueRouter)
 
@@ -50,6 +51,11 @@ const routes = [
     path: '/exchange',
     name: 'exchange',
     component: Exchange
+  },
+  {
+    path: '/charts',
+    name: 'charts',
+    component: Charts
   },
 ]
 

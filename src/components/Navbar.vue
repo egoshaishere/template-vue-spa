@@ -71,6 +71,7 @@ export default {
         {icon: 'school', text: 'Wiki', route: '/wiki'},
         {icon: 'view_comfy', text: 'Grid', route: '/grid'},
         {icon: 'currency_exchange', text: 'Exchange', route: '/exchange'},
+        {icon: 'analytics', text: 'Charts', route: '/charts'},
       0]
     };
   },
