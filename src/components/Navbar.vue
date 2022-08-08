@@ -64,16 +64,10 @@ export default {
       isOpen: false,
       links: [
         {icon: 'dashboard', text: 'Dashboard', route: '/'},
-        {icon: 'folder', text: 'My Projects', route: '/projects'},
-        {icon: 'tips_and_updates', text: 'Ideas', route: '/ideas'},
-        {icon: 'person', text: 'Team', route: '/team'},
-        {icon: 'map', text: 'Map', route: '/map'},
-        {icon: 'school', text: 'Wiki', route: '/wiki'},
-        {icon: 'view_comfy', text: 'Grid', route: '/grid'},
         {icon: 'currency_exchange', text: 'Exchange', route: '/exchange'},
         {icon: 'analytics', text: 'Charts', route: '/charts'},
         {icon: 'ssid_chart', text: 'MultiCharts', route: '/multicharts'},
-      0]
+      ]
     };
   },
   methods: {
