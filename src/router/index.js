@@ -4,8 +4,8 @@ import Dashboard from '../views/Dashboard.vue'
 import Exchange from '../views/Exchange.vue'
 import Charts from '../views/Charts.vue'
 import NotFound from '../views/404.vue'
-import MultiChart from '../views/Multichart.vue'
-
+import MultiChartView from '../views/MultiChartView.vue'
+import Sandbox from '../views/Sandbox.vue'
 
 Vue.use(VueRouter)
 
@@ -28,7 +28,12 @@ const routes = [
   {
     path: '/multicharts',
     name: 'multicharts',
-    component: MultiChart
+    component: MultiChartView
+  },
+  {
+    path: '/sandbox',
+    name: 'sandbox',
+    component: Sandbox
   },
   {
     path: '/*',

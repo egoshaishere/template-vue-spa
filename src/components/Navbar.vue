@@ -66,7 +66,8 @@ export default {
         {icon: 'dashboard', text: 'Dashboard', route: '/'},
         {icon: 'currency_exchange', text: 'Exchange', route: '/exchange'},
         {icon: 'analytics', text: 'Charts', route: '/charts'},
-        {icon: 'ssid_chart', text: 'MultiCharts', route: '/multicharts'},
+        {icon: 'ssid_chart', text: 'MultiChart Chart.js', route: '/multicharts'},
+        {icon: 'emoji_symbols', text: 'Sandbox', route: '/sandbox'},
       ]
     };
   },

@@ -1,13 +1,5 @@
 <template>
   <div>
-    <v-btn class="butt" v-on:click="getTimeseriesSymbolsMethod"
-      >timeseries + symbols</v-btn
-    >
-
-    <v-btn class="butt ma-5" v-on:click="dataDrip">drip</v-btn>
-
-
-
     <LineChartGenerator
       :chart-options="chartOptions"
       :chart-data="chartData"
@@ -53,7 +45,7 @@ const LABELS = "";
 const DATA = "";
 
 export default {
-  name: "LineChart",
+  name: "MultiChart",
   components: {
     LineChartGenerator,
   },
@@ -92,29 +84,7 @@ export default {
       ...mapActions({
         getTimeseriesSymbolsAction: "exchangeModule/getTimeseriesSymbolsAction",
       }),
-      chartData: {
-        labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-        ],
-        datasets: [
-          {
-            label: "Курс доллара к Рублю",
-            backgroundColor: "#f87979",
-            data: [50, 50, 50, 50, 50, 50, 50],
-          },
-          // {
-          //   label: "еще 1 датасет",
-          //   backgroundColor: "#f87979",
-          //   data: [50, 50, 50, 50, 50, 50, 50],
-          // },
-        ],
-      },
+      
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
@@ -125,6 +95,7 @@ export default {
     ...mapGetters({
       getValues: "exchangeModule/getValues",
       getMarks: "exchangeModule/getMarks",
+      chartData: 'multiChartModule/chartData'
     }),
   },
   methods: {
@@ -133,6 +104,7 @@ export default {
       this.chartData.datasets[0].data = loco;
       this.chartData.labels = this.getMarks;
     },
+
     async getTimeseriesSymbolsMethod() {
       return await this.getTimeseriesSymbolsAction();
     },
