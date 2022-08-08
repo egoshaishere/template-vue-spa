@@ -4,9 +4,10 @@
       >timeseries + symbols</v-btn
     >
 
-    <v-btn class="butt" v-on:click="dataDrip">drip</v-btn>
+    <v-btn class="butt ma-5" v-on:click="dataDrip">drip</v-btn>
 
-   
+
+
     <LineChartGenerator
       :chart-options="chartOptions"
       :chart-data="chartData"

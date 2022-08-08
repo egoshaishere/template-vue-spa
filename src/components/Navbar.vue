@@ -72,6 +72,7 @@ export default {
         {icon: 'view_comfy', text: 'Grid', route: '/grid'},
         {icon: 'currency_exchange', text: 'Exchange', route: '/exchange'},
         {icon: 'analytics', text: 'Charts', route: '/charts'},
+        {icon: 'ssid_chart', text: 'MultiCharts', route: '/multicharts'},
       0]
     };
   },
