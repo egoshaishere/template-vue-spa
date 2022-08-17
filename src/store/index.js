@@ -1,7 +1,5 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from 'axios'
-
 Vue.use(Vuex)
 
 // 40 % осталось 05,08
